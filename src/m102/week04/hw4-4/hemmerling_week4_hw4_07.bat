@@ -1,0 +1,1 @@
+mongo --port 27002 --shell hemmerling_week4_hw4_7.js

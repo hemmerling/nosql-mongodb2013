@@ -1,0 +1,2 @@
+Please dearchive the archive images.zip with the database here.
+Directory structure: ./images.json

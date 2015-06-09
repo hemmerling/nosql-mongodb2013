@@ -1,0 +1,2 @@
+Please dearchive the archive reddit.zip with the database here.
+Directory structure: ./reddit.json

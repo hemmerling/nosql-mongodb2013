@@ -1,0 +1,1 @@
+mongoimport -d school53 -c grades --drop < grades_5-3.js

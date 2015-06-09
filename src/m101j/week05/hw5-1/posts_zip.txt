@@ -1,0 +1,2 @@
+Please dearchive the archive posts.zip with the database here.
+Directory structure: ./posts.json

@@ -1,0 +1,1 @@
+mongo --shell localhost/week6 week6.js

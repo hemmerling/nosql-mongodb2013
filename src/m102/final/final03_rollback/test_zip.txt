@@ -1,0 +1,2 @@
+Please dearchive the archive test.zip with the database here.
+Directory structure: ./test.json

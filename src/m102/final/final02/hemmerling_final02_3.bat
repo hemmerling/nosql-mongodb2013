@@ -1,0 +1,1 @@
+ mongo --shell --port 27002 a.js

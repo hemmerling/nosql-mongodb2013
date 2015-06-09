@@ -1,0 +1,2 @@
+Please dearchive the archive grades.zip with the database here.
+Directory structure: ./grades.json

@@ -1,0 +1,1 @@
+mongo --shell localhost/myblog <hemmerling_final05_1.js

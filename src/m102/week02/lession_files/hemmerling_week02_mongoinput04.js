@@ -1,0 +1,38 @@
+show dbs
+use pcat
+show collections
+db.test.drop()
+t = db.test
+t.find()
+t.insert({"x" : "hello"})
+t.insert({"x" : "hello"})
+t.insert({"x" : "hello"})
+t.insert({"x" : "hello"})
+print ( "Find" )
+t.find()
+t.insert({"_id": 100, "x" : "hello id"})
+t.insert({"_id": 101, "x" : "hello id"})
+print ( "New Find" )
+t.find()
+t.update( {"_id": 100}, {"_id": 100, "x" : "hello update", "y": 123})
+print ( "New Find after Update" )
+t.find()
+t.update( {"_id": 100}, {"_id": 101, "x" : "hello update", "y": 123})
+myObj = t.findOne()
+myObj.x = "hello in the shell"
+t.update( { "_id" : myObj._id}, myObj )
+t.find()
+myObj.x = "hello 2 in the shell"
+t.save(myObj)
+t.find()
+t.update( { "_id" : 100 }, { $set : {"y": 100} } )
+t.find()
+t.update( { "_id" : 100 }, { $inc : {"y": 1} } )
+t.find()
+t.update( { "_id" : 100 }, { $push : {"arr": "hi"} } )
+t.update( { "_id" : 100 }, { $push : {"arr": "there"} } )
+t.update( { "_id" : 100 }, { $push : {"arr": "guys"} } )
+t.update( { "_id" : 100 }, { $addToSet : {"arr": "a"} } )
+t.update( { "_id" : 100 }, { $addToSet : {"arr": "b"} } )
+t.update( { "_id" : 100 }, { $addToSet : {"arr": "b"} } )
+t.find()

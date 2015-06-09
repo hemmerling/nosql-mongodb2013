@@ -1,0 +1,1 @@
+mongo --port 27017 < hemmerling_week6_mongoreplica.js

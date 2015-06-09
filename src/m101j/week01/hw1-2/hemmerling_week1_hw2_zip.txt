@@ -1,0 +1,2 @@
+Please dearchive the archive hemmerling_week1_hw2.zip with the database here.
+Directory structure: ./hemmerling_week1_hw2.json

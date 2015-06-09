@@ -1,0 +1,1 @@
+mongo --shell localhost/week6 < hemmerling_week6_hw2_2.js

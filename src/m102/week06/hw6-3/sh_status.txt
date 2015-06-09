@@ -1,0 +1,21 @@
+mongos> sh.status()sh.status()
+--- Sharding Status --- 
+  sharding version: {
+	"_id" : 1,
+	"version" : 3,
+	"minCompatibleVersion" : 3,
+	"currentVersion" : 4,
+	"clusterId" : ObjectId("51b586ebb8c80fed62c86fc7")
+}
+  shards:
+	{  "_id" : "shard0000",  "host" : "localhost:27018" }
+	{  "_id" : "shard0001",  "host" : "localhost:27500" }
+  databases:
+	{  "_id" : "admin",  "partitioned" : false,  "primary" : "config" }
+	{  "_id" : "week6",  "partitioned" : true,  "primary" : "shard0000" }
+		week6.trades
+			shard key: { "ticker" : 1 }
+			chunks:
+				shard0000	1
+			{ "ticker" : { "$minKey" : 1 } } -->> { "ticker" : { "$maxKey" : 1 } } on : shard0000 { "t" : 1, "i" : 0 } 
+	{  "_id" : "trades",  "partitioned" : false,  "primary" : "shard0000" }

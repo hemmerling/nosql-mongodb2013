@@ -1,0 +1,1 @@
+mongoimport -d snps -c problem11 --drop problem11.json

@@ -1,0 +1,2 @@
+Please dearchive the archive album.zip with the database here.
+Directory structure: ./album.json

@@ -1,0 +1,32 @@
+show dbs
+use store
+show collections
+// Drop
+db.products.dropIndex( 	{ "sku" : 1 } )
+db.products.dropIndex( 	{ "price" : -1 } )
+db.products.dropIndex( 	{ "description" : 1 } )
+db.products.dropIndex( 	{ "category" : 1, "brand" : 1 } )
+db.products.dropIndex( 	{ "reviews.author" : 1 } )
+db.products.drop()
+// Insert
+db.products.insert({ "name" : "Product1", "sku": "sku1", "price" : 30, "description": "Description of Product1", "brand" : "GE", "category": "Category1", "reviews": [ { "author" : "Reviewer1"} ] })
+db.products.insert({ "name" : "Product2", "sku": "sku2", "price" : 40, "description": "Description of Product2", "brand" : "GE", "category": "Category2", "reviews": [ { "author" : "Reviewer2" } ] })
+print ( "Generate indexes" )
+db.products.ensureIndex( 	{ "sku": 1 }, { unique: true } )
+db.products.ensureIndex( 	{ "price" : -1 } )
+db.products.ensureIndex( 	{ description : 1 } )
+db.products.ensureIndex( 	{ category : 1, brand : 1 } )
+db.products.ensureIndex( 	{ "reviews.author" : 1 } )
+print ( "Find all indexes" )
+db.system.indexes.find()
+print ( "Show indexes of interest" )
+db.products.getIndexes()
+//db.reviews.getIndexes()
+print ( "Queries" )
+db.products.find({'brand':"GE"}).explain()
+print ( "Query 2" )
+db.products.find({'brand':"GE"}).sort({price:1}).explain()
+print ( "Query 3" )
+db.products.find({$and:[{price:{$gt:30}},{price:{$lt:50}}]}).sort({brand:1}).explain()
+print ( "Query 4")
+db.products.find({brand:'GE'}).sort({category:1, brand:-1}).explain()

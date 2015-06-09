@@ -1,0 +1,2 @@
+Please dearchive the archive products.zip with the database here.
+Directory structure: ./products.json

@@ -1,0 +1,2 @@
+Please dearchive the archive students.zip with the database here.
+Directory structure: ./students.json
