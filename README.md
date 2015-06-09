@@ -6,3 +6,12 @@ Self report: Me, Rolf Hemmerling, participated successfully at the online course
 - "M101P: MongoDB for Developers" ( 2013-04-01 - 2013-05-20 ), with 85% successfully
 - "M102: MongoDB for DBAs" ( 2013-04-29 - 2013-06-17 ), with 86% successfully
 - "M101J: MongoDB for Java Developers" ( 2013-05-13 - 2013-07-01 ), with 85% successfully
+
+At some directories, there are files with name xxx_zip.txt, where xxx.zip is the name of a database file of the /data directory of this project. If you want to process the code, you must first dearchive the zipped database file in that directory. 
+
+It's because
+- The database files ( .json, ... ) were supplied by the original course, but needed for the execution of the code
+- There is the need to have multiple copies of database files, in different directories.
+- The database files are quite large, so some are beyond the file limit of this repository.
+- You should always separate code from data :-).
+
