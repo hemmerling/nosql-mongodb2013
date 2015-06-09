@@ -7,7 +7,7 @@ Self report: Me, Rolf Hemmerling, participated successfully at the online course
 - "M102: MongoDB for DBAs" ( 2013-04-29 - 2013-06-17 ), with 86% successfully
 - "M101J: MongoDB for Java Developers" ( 2013-05-13 - 2013-07-01 ), with 85% successfully
 
-At some directories, there are files with name xxx_zip.txt, where xxx.zip is the name of a database file. The database files are just available as separate download, at SourceForge ( http://www.sourceforge.net/projects/nosql-mongodb2013 )
+At some directories, there are files with name xxx_zip.txt, where xxx.zip is the name of a database file. The database files are just available as separate download, at SourceForge ( http://www.sourceforge.net/projects/nosql-mongodb2013 ).
 
 It's because
 - The database files ( .json, ... ) were supplied by the original course, but needed for the execution of the code
