@@ -12,7 +12,7 @@ At some directories, there are files with name xxx_zip.txt, where xxx.zip is the
 It's because
 - The database files ( .json, ... ) were supplied by the original course, but needed for the execution of the code
 - There is the need to have multiple copies of database files, in different directories.
-- The database files are quite large, so some are beyond the file limit of this repository.
+- The database files are quite large, so some are beyond the file limit of this repository ( 100 MBytes ).
 - You should always separate code from data :-).
 
 If you want to process the code, you must first dearchive the zipped database file in that directory. 
